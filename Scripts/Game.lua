@@ -414,8 +414,4 @@ function Game:Unauthorise(id)
 	return false
 end
 
-function Game:cl_shareMap( params)
-	self.network:sendToServer("sv_shareMap", params)
-end
-
 SecureClass(Game)

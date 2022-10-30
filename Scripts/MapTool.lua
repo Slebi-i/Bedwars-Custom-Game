@@ -52,7 +52,6 @@ function MapTool:update_page()
 
     self.gui:setText("Title", map.name)
 	self.gui:setVisible("DeleteMap", map.custom)
-	self.gui:setVisible("ShareMap", map.custom)
 
 	if not map.custom then
 		self.gui:setText("Description", map.desc)
@@ -129,11 +128,6 @@ function MapTool:cl_load_map_button()
 	local msg = "#999999Do you want to load #00ff00" .. g_maps[self.mapIndex].name .. "#999999?\nThis will END your current game!"
 	self:cl_createConfirmGui("cl_load_map", msg)
 end
-
-function MapTool:cl_share_map_button()
-	sm.event.sendToGame("cl_shareMap", g_maps[self.mapIndex])
-end
-
 
 function MapTool:cl_load_map(name)
 	if name == "Yes" then
