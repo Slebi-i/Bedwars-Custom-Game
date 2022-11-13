@@ -84,6 +84,12 @@
         "blueprint": "Legacy"
     },
     {
+        "name": "Tiny",
+        "desc": "Up to 4 Teams map.\n\nBuilt by Planty",
+        "image": "Tiny.png",
+        "blueprint": "Tiny4Teams"
+    },
+    {
         "name": "Empty Map",
         "desc": "Empty map. Useful as template for building.",
         "image": "Empty.png",
